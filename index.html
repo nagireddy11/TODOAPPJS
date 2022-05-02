@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDO Mobile Responsivness</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div id="mainContainer">
+        <span class="head"><b>Tasks</b> &nbsp; List</span>
+        <p id="content">No Items in the todo list</p>
+        <span><i class="fa-solid fa-3x fa-circle-plus" id="button" onclick="addList()"></i>
+            <p class="button">Add Item</p>
+        </span>
+        <!-- <button onclick="addList()" id="button" >i am button</button> -->
+    </div>
+    <div class="pop" id="pop">
+        <p>Add New List</p>
+        <input type="text" name="name" value="" id="name" placeholder="Add New List"><br> <br>
+        <button id="add" onclick="changeHere()">Add</button>
+        <button id="close" onclick="close()">Close</button>
+    </div>
+    <!-- <div class="pop" id="pop">
+        <p>Add New List</p>
+        <input type="text" name="name" value="" id="name" placeholder="Add New List"><br> <br>
+        <button id="add" onclick="changeHere()">Add</button>
+        <button id="close" onclick="close()">Close</button>
+    </div> -->
+    <div id="parent"></div>
+
+    <div class="pop2" id="pop2">
+        <p>Add New Item</p>
+        <input type="text" name="innername" value="" id="innername" placeholder="Add New Item"><br> <br>
+        <button id="add2" onclick="inner()">Add</button>
+        <button id="close2" onclick="close()">Close</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
